@@ -1,31 +1,4 @@
 $(function() { 
-
-	var elem = document.getElementById('animate');
-	
-	// Trigger the animation named 'boxrotate' with duration 3000ms
-	CSSAnimation.trigger(elem, 'rotate', 3000);	
-	
-	$('#animate').cssanimation('rotate', 3000);
-
-
-	$('#animate').bind('cssAnimationKeyframe', function(event){
-	    var text = "";
-	
-	    switch(event.originalEvent.keyText) {
-	        case '0%':
-	            text = "down &darr;"; break;
-	        case '25%':
-	            text = "right &rarr;"; break;
-	        case '50%':
-	            text = "up &uarr;"; break;
-	        case '75%':
-	            text = "left &larr;"; break;
-	        case '100%':
-	            text = "click me"; break;
-	    };
-	
-	    console.log(text);
-	});
 	
 	/**
  * @preserve CSSAnimation v0.2
